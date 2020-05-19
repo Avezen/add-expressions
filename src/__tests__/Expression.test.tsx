@@ -14,7 +14,7 @@ const renderExpression = (props: Partial<ExpressionProps> = {}) => {
 };
 
 describe("<Expression />", () => {
-    it("should render component", async () => {
+    it("should render component", () => {
         const findByTestId = renderExpression(),
             ExpressionComponent = renderer.create(findByTestId).toJSON();
 

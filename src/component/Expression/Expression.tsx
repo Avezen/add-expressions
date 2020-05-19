@@ -1,8 +1,9 @@
 import React from 'react';
+import {IExpression} from "../../util/algebra";
 
 export interface ExpressionProps {
-    expression: any;
-    setExpression: any;
+    expression: IExpression[];
+    setExpression: (arg: IExpression[]) => void;
 }
 
 export const Expression = ({expression, setExpression}: ExpressionProps) => {
@@ -15,22 +16,22 @@ export const Expression = ({expression, setExpression}: ExpressionProps) => {
         setExpression(newFirstExpression);
     };
 
-    const removeExpressionPart = (key: any) => {
+    const removeExpressionPart = (key: number) => {
         let newFirstExpression = [...expression];
         newFirstExpression.splice(key, 1);
 
         setExpression(newFirstExpression);
     };
 
-    const changeExpressionFactor = (factor: any, power: any) => (e: any) => {
-        const newFirstExpression = expression.map((obj: any) =>
+    const changeExpressionFactor = (factor: number, power: number) => (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newFirstExpression = expression.map((obj: IExpression) =>
             obj.power === power ? { ...obj, factor: parseInt(e.target.value) } : obj
         );
 
         setExpression(newFirstExpression);
     };
 
-    const changeExpressionPower = (factor: any, power: any, key: number) => (e: any) => {
+    const changeExpressionPower = (factor: number, power: number, key: number) => (e: React.ChangeEvent<HTMLInputElement>) => {
         let newFirstExpression = [...expression];
 
         newFirstExpression[key].power = parseInt(e.target.value);
@@ -45,7 +46,7 @@ export const Expression = ({expression, setExpression}: ExpressionProps) => {
             </button>
             <br/>
             <div className={'expression'}>
-            {expression.map(({factor, power}: {factor: any, power: any}, key: any) => {
+            {expression.map(({factor, power}: {factor: number, power: number}, key: number) => {
                 return(
                     <div key={key}>
                         <input id={`factor-${key}`} type={'number'} value={factor} onChange={changeExpressionFactor(factor, power)}/>

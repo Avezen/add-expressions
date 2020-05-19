@@ -1,13 +1,13 @@
-interface Expression {
+export interface IExpression {
     factor: number;
     power: number
 }
 
-type ExpressionOutput = Record<string, number>;
+export type IExpressionOutput = Record<string, number>;
 
 export const algebra = {
-    sumExpressions(input1: Expression[], input2: Expression[]) {
-        let output: ExpressionOutput = {};
+    sumExpressions(input1: IExpression[], input2: IExpression[]) {
+        let output: IExpressionOutput = {};
 
         input1.forEach((expression) => {
             if (expression.factor !== 0) {
@@ -18,8 +18,8 @@ export const algebra = {
 
         input2.forEach((expression) => {
             if (expression.factor !== 0) {
-                if ((output as ExpressionOutput)[expression.power]) {
-                    (output as ExpressionOutput)[expression.power] += expression.factor;
+                if ((output as IExpressionOutput)[expression.power]) {
+                    (output as IExpressionOutput)[expression.power] += expression.factor;
                 } else {
                     const item = {[expression.power]: expression.factor};
                     output = Object.assign(item, output)

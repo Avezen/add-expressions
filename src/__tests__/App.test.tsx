@@ -8,14 +8,14 @@ const renderApp = () => {
 };
 
 describe("<App />", () => {
-    it("should render component", async () => {
+    it("should render component", () => {
         const findByTestId = renderApp(),
             ExpressionsSumComponent = renderer.create(findByTestId).toJSON();
 
         expect(ExpressionsSumComponent).toMatchSnapshot();
     });
 
-    it("should render proper result (5x2 + 2", async () => {
+    it("should render proper result (5x2 + 2)", () => {
         const findByTestId = renderApp(),
             ExpressionsSumComponent = renderer.create(findByTestId).toJSON();
 
