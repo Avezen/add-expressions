@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExpressionsSum /> should render component 1`] = `
+<div
+  className="expression"
+  style={
+    Object {
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <span>
+    +
+  </span>
+  1
+  x
+</div>
+`;

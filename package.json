@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@types/node": "^14.0.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "typescript": "^3.9.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest -c jest.config.js --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,5 +31,40 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^25.2.1",
+    "@types/react": "^16.9.34",
+    "@types/react-test-renderer": "^16.9.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^3.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^2.0.4",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "style-loader": "^1.0.1",
+    "svg-url-loader": "^5.0.0",
+    "ts-jest": "^25.4.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "files": [
+    "build/**/*"
+  ]
 }

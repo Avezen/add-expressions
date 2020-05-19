@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render component 1`] = `
+<div
+  className="App"
+>
+  <br />
+  First expression:
+  <div>
+    <button
+      id="add-expression"
+      onClick={[Function]}
+    >
+      +
+    </button>
+    <br />
+    <div
+      className="expression"
+    >
+      <div>
+        <input
+          id="factor-0"
+          onChange={[Function]}
+          type="number"
+          value={5}
+        />
+        x
+        <input
+          id="power-0"
+          onChange={[Function]}
+          type="number"
+          value={2}
+        />
+        <button
+          id="remove-expression-0"
+          onClick={[Function]}
+        >
+          x
+        </button>
+        <br />
+      </div>
+    </div>
+  </div>
+  <br />
+  Second expression:
+  <div>
+    <button
+      id="add-expression"
+      onClick={[Function]}
+    >
+      +
+    </button>
+    <br />
+    <div
+      className="expression"
+    >
+      <div>
+        <input
+          id="factor-0"
+          onChange={[Function]}
+          type="number"
+          value={2}
+        />
+        x
+        <input
+          id="power-0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <button
+          id="remove-expression-0"
+          onClick={[Function]}
+        >
+          x
+        </button>
+        <br />
+      </div>
+    </div>
+  </div>
+  <br />
+  Result:
+  <div
+    className="expression"
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<App /> should render proper result (5x2 + 2 1`] = `
+<div
+  className="App"
+>
+  <br />
+  First expression:
+  <div>
+    <button
+      id="add-expression"
+      onClick={[Function]}
+    >
+      +
+    </button>
+    <br />
+    <div
+      className="expression"
+    >
+      <div>
+        <input
+          id="factor-0"
+          onChange={[Function]}
+          type="number"
+          value={5}
+        />
+        x
+        <input
+          id="power-0"
+          onChange={[Function]}
+          type="number"
+          value={2}
+        />
+        <button
+          id="remove-expression-0"
+          onClick={[Function]}
+        >
+          x
+        </button>
+        <br />
+      </div>
+    </div>
+  </div>
+  <br />
+  Second expression:
+  <div>
+    <button
+      id="add-expression"
+      onClick={[Function]}
+    >
+      +
+    </button>
+    <br />
+    <div
+      className="expression"
+    >
+      <div>
+        <input
+          id="factor-0"
+          onChange={[Function]}
+          type="number"
+          value={2}
+        />
+        x
+        <input
+          id="power-0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <button
+          id="remove-expression-0"
+          onClick={[Function]}
+        >
+          x
+        </button>
+        <br />
+      </div>
+    </div>
+  </div>
+  <br />
+  Result:
+  <div
+    className="expression"
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <span>
+      +
+    </span>
+    5
+    x
+    <sup>
+      <small>
+        2
+      </small>
+    </sup>
+    <span>
+      +
+    </span>
+    2
+  </div>
+</div>
+`;
