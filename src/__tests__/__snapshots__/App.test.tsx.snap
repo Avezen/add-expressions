@@ -82,17 +82,11 @@ exports[`<App /> should render component 1`] = `
   Result:
   <div
     className="expression"
-    style={
-      Object {
-        "display": "flex",
-        "justifyContent": "center",
-      }
-    }
   />
 </div>
 `;
 
-exports[`<App /> should render proper result (5x2 + 2 1`] = `
+exports[`<App /> should render proper result (5x2 + 2) 1`] = `
 <div
   className="App"
 >
@@ -174,12 +168,6 @@ exports[`<App /> should render proper result (5x2 + 2 1`] = `
   Result:
   <div
     className="expression"
-    style={
-      Object {
-        "display": "flex",
-        "justifyContent": "center",
-      }
-    }
   >
     <span>
       +

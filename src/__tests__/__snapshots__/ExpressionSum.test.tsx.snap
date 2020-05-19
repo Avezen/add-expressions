@@ -3,12 +3,6 @@
 exports[`<ExpressionsSum /> should render component 1`] = `
 <div
   className="expression"
-  style={
-    Object {
-      "display": "flex",
-      "justifyContent": "center",
-    }
-  }
 >
   <span>
     +
